@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #eaf6ff;
+
+}
+.card{
+      position: relative;
+      width: 300px;
+      height: 400px;
+      background: #fff;
+      padding: 18px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(13, 17, 20, 0.25),
+      -6px -6px 15px rgba(17, 22, 26, 0.1),
+      inset -5px -5px 10px rgba(9,148,255,0.5);
+      object-fit: cover;
+}
+.card .img{
+    position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.card .img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card .content{
+     width: 100%;
+     padding: 30px 20px;
+     display: grid;
+    place-items: center;
+}
+.card .content h3{
+    color: #307cb6;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.card .content h3 span{
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    text-transform: initial;
+}
+.card .content .sci{
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+.card .content .sci li{
+    list-style-type: none;
+    font-size: 30px;
+}
+.card .content .sci li a{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    display: grid;
+    place-items: center;
+    text-decoration: none;
+    background: #fff;
+    color: #307cb6;
+    font-size: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(13, 17, 20, 0.25),
+      -6px -6px 15px rgba(17, 22, 26, 0.1),
+      inset -5px -5px 10px rgba(9,148,255,0.5);
+      transition: all 1s ease;
+}
+.card .content .sci li a:hover{
+    color: #333;
+
+}
+
+</style>
+
+<body>
+    <div class="card">
+        <div class="img">
+            <img src="./271903408_459576218991027_2902974954056959611_n.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3>Harnish Panchal <br><span>Developer</span></h3>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/harnis.panchal"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/harnish_09_19/"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a
+                    href="https://www.google.co.in/maps/place/Ahmedabad,+Gujarat/@23.0204978,72.4396545,11z/data=!3m1!4b1!4m5!3m4!1s0x395e848aba5bd449:0x4fcedd11614f6516!8m2!3d23.022505!4d72.5713621?hl=en&authuser=0">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+</body>
+
+</html>
